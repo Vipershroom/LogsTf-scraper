@@ -1,1 +1,1 @@
-url = "https://logs.tf/"
+url = "https://logs.tf"
