@@ -48,7 +48,8 @@ class LogsTf:
         # Stores all the data into a dictionary and returns it
         return self.__store_data([content.find_all('td', class_=None)[i].text for i in range(13)])
     
-    def __store_data(self, log):
+    # Stores log data into a dictionary
+    def __store_data(self, log: list) -> dict:
         return {
             "Kills": log[0],
             "Assists": log[1],
